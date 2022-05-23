@@ -94,31 +94,54 @@ header,footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  
 }
 
 /* HEADER STYLES */
 
 header {
-
+  padding: 15px 0;
 }
 
 header .content-wrapper {
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+header .unplugged-logo {
+  width: 100%;
 }
 
 header .header-divider {
-
+  width: 90%;
 }
 
 header nav {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row wrap; 
+  justify-content: center;
+  width: 60%;
+  
 }
 
 header nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0;
+}
+
+header nav ul li{
+  display: flex;
+
+  
+
+  
 }
 
 /* FOOTER STYLES */
@@ -128,7 +151,11 @@ footer {
 }
 
 footer .content-wrapper {
-
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 55%;
+  margin: 50px 0;
 }
 
 .footer-content {
@@ -143,19 +170,29 @@ footer .social-icons {
   display: flex;
 }
 
+footer p {
+  margin: 0;
+}
+
 footer .social p {
   display: flex;
+
 }
 
 
 /*------- MOBILE STYLES - HOMEPAGE - MAIN------- */
+
+main {
+
+
+}
 
 .hero-area {
   display: flex;
 }
 
 .hero-area .content-wrapper {
-
+  padding: 40px 20px;
 }
 
 aside {
@@ -164,7 +201,7 @@ aside {
 }
 
 aside .content-wrapper {
-
+  padding: 30px 20px;
 }
 
 .form-descriptions {
@@ -178,15 +215,25 @@ aside .content-wrapper {
 
 .features {
   display: flex;
-  align-content: flex-start;
 }
 
 .features .content-wrapper {
-
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 20px;
 }
 
-article {
+.features .content-wraper h2 {
 
+}
+.features article {
+  width: 55%;
+  display: flex;
+}
+
+.features p {
+  margin: 0;
 }
 
 .fontawesome-icon {
@@ -196,6 +243,7 @@ article {
 .features .features-items {
   display: flex;
   flex-flow: row wrap;
+  padding: 20px 0;
 }
 
 .reviews {
@@ -204,7 +252,11 @@ article {
 }
 
 .reviews .content-wrapper {
+  padding: 30px 20px;
+}
 
+.reviews h3 {
+  width: 55%;
 }
 
 /*------- MOBILE STYLES - ABOUT PAGE - MAIN------- */
@@ -215,6 +267,8 @@ article {
 }
 
 .mission .content-wrapper {
+  margin: 30px 20px;
+
 
 }
 
@@ -236,7 +290,7 @@ article {
 }
 
 .contact-section .content-wrapper {
-
+  margin: 30px 20px;
 }
 
 .social {
@@ -261,6 +315,7 @@ article {
 .faq .content-wrapper {
   display: flex;
   flex-flow: row wrap;
+  margin: 30px 20px;
 }
 
 .faq-content {
