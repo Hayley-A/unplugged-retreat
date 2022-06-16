@@ -90,6 +90,7 @@ textarea {
  
 html {
 	font-size: 16px;
+  color: #e2e3ed;
 }
  
 body {
@@ -111,17 +112,24 @@ a {
 h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 3.75em;
+  font-weight: 100;
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2.25em;
+  font-size: 3em;
+  font-weight: 100;
 }
  
-h3, 
-h4 {
+h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: 100;
+}
+
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
 }
  
 p {
@@ -140,14 +148,11 @@ figure {
 address {
   font-style: normal;
 }
- 
+
 .content-wrapper {
- 
+  width: 90%;
+  margin: 50px 0;
 }
-  .content-wrapper {
-    width: 90%;
-    margin: 50px 0;
-  }
 
 
 /* -------BASE HEADER - FOOTER STYLES------- */
@@ -157,6 +162,7 @@ header,footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
   
 }
 
@@ -164,6 +170,7 @@ header,footer {
 
 header {
   padding: 15px 0;
+  
 }
 
 header .content-wrapper {
@@ -172,6 +179,7 @@ header .content-wrapper {
   align-items: center;
   justify-content: center;
   margin: 0;
+
 }
 
 header .header-divider {
@@ -201,14 +209,16 @@ footer .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .footer-content {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
+  
 }
 
 footer h4 {
@@ -220,10 +230,14 @@ footer .contact {
   display: flex;
   flex-direction: column;
   text-align: center;
+  flex-basis: 320px;
 }
-
 footer .social {
-  width: 80%;
+  flex-basis: 320px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 footer .social-icons {
@@ -240,10 +254,10 @@ footer .social-icons p {
 
 footer .copyright {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-flow: row nowrap;
-  width: 90%;
+  flex-basis: 275px;
   margin: 20px 0;
 }
 
@@ -251,7 +265,14 @@ footer .copyright p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 33%;
+  padding: 0 20px;
+}
+
+.border-right {
+  border-right: 1px solid #e2e3ed;
+  text-align: right;
+  width: 125px;
+  display: auto;
 }
 
 
@@ -267,11 +288,42 @@ footer .copyright p {
 
 /* Aside */
 
+aside .content-wrapper {
+
+}
+
 aside {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* Features */
@@ -312,6 +364,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  text-align: center;
 }
 
 /* Reviews */
@@ -320,6 +373,7 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
 }
 
 .reviews h2 {
@@ -327,7 +381,7 @@ aside {
 }
 
 .reviews h3 {
-  width: 55%;
+  width: 
   margin: 20px 0;
 }
 
@@ -338,6 +392,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .map {
@@ -348,7 +403,7 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  background-color: #2a423a;
 }
 
 .contact p {
@@ -362,6 +417,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -477,7 +533,7 @@ aside {
   /*****Home Page - Tablet Styles*****/
 
 .content-wrapper {
-  max-width: 640px;
+  width: 80%;
   margin: 100px 0;
 }
 
@@ -488,7 +544,7 @@ header {
 }
 
 header .content-wrapper {
-  width: 100%;
+  width: 80%;
   justify-content: space-between;
 }
 
@@ -557,8 +613,12 @@ aside .content-wrapper .form {
 
 footer .content-wrapper {
   margin: 100px 0;
+  width: 80%;
 }
 
+footer {
+  
+}
 .footer-content {
   display: flex;
   justify-content: space-around;
@@ -568,6 +628,7 @@ footer .content-wrapper {
 
 .footer-content .contact, .footer-content .social {
   width: 45%;
+  flex-basis: 0;
 }
 
 footer .contact {
@@ -672,6 +733,24 @@ aside .content-wrapper .form {
 /* Reviews */ 
 .reviews article div {
  width: 440px;
+}
+
+/* Footer */
+
+footer .content-wrapper {
+
+}
+
+footer .copyright {
+  max-width: 960px;
+  width: 80%;
+  flex-basis: auto;
+  justify-content: center;
+}
+
+
+footer .copyright p {
+ 
 }
 
 /* ==========================================================================
