@@ -229,7 +229,7 @@ footer .content-wrapper {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   
 }
 
@@ -253,9 +253,20 @@ footer .social {
 }
 
 footer .social-icons {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+footer .social-icons a {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #527158;
+  align-items: center;
+  justify-content: center;
 }
 
 footer .social-icons p {
@@ -711,6 +722,10 @@ footer {
 
 footer .contact {
   margin-bottom: 0;
+}
+
+footer .social-icons p {
+  padding: 0 20px;
 }
 
 footer .copyright {
